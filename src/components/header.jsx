@@ -1,33 +1,16 @@
-import { useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   SignedIn,
   SignedOut,
   UserButton,
-  SignIn,
+  SignInButton,
   useUser,
 } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 import { BriefcaseBusiness, Heart, PenBox } from "lucide-react";
 
 const Header = () => {
-  const [showSignIn, setShowSignIn] = useState(false);
-
-  const [search, setSearch] = useSearchParams();
   const { user } = useUser();
-
-  useEffect(() => {
-    if (search.get("sign-in")) {
-      setShowSignIn(true);
-    }
-  }, [search]);
-
-  const handleOverlayClick = (e) => {
-    if (e.target === e.currentTarget) {
-      setShowSignIn(false);
-      setSearch({});
-    }
-  };
 
   return (
     <>
@@ -38,10 +21,11 @@ const Header = () => {
 
         <div className="flex gap-8">
           <SignedOut>
-            <Button variant="outline" onClick={() => setShowSignIn(true)}>
-              Login
-            </Button>
+            <SignInButton mode="modal" redirectUrl="/onboarding">
+              <Button variant="outline">Login</Button>
+            </SignInButton>
           </SignedOut>
+
           <SignedIn>
             {user?.unsafeMetadata?.role === "recruiter" && (
               <Link to="/post-job">
@@ -51,12 +35,15 @@ const Header = () => {
                 </Button>
               </Link>
             )}
+
             <UserButton
               appearance={{
                 elements: {
                   avatarBox: "w-10 h-10",
                 },
               }}
+              userProfileMode="modal"
+              afterSignOutUrl="/"
             >
               <UserButton.MenuItems>
                 <UserButton.Link
@@ -69,24 +56,11 @@ const Header = () => {
                   labelIcon={<Heart size={15} />}
                   href="/saved-jobs"
                 />
-                <UserButton.Action label="manageAccount" />
               </UserButton.MenuItems>
             </UserButton>
           </SignedIn>
         </div>
       </nav>
-
-      {showSignIn && (
-        <div
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-          onClick={handleOverlayClick}
-        >
-          <SignIn
-            signUpForceRedirectUrl="/onboarding"
-            fallbackRedirectUrl="/onboarding"
-          />
-        </div>
-      )}
     </>
   );
 };
