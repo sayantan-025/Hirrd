@@ -1,11 +1,48 @@
-# Full Stack Job Portal with React JS, Tailwind CSS, Supabase, Clerk, Shadcn UI Tutorial 🔥🔥
-## https://www.youtube.com/watch?v=2XF-HgauItk
-![hirrd 1](https://github.com/user-attachments/assets/1da23b25-1f29-4402-be74-03685d9b732d)
+<h1 align="center">💫 Hirrd 💫</h1>
 
-### Make sure to create a `.env` file with following variables -
+<p align="center">
+<img src="https://img.shields.io/badge/Created_By-Sayantan_Bera-blue"> 
+<img src="https://img.shields.io/badge/Tech_Stack-React_+_Supabase_+_Clerk_+_ShadcnUI-red">
+<img src="https://img.shields.io/badge/License-MIT-green">
+<img src="https://img.shields.io/badge/Status-Active-brightgreen">
+</p>
 
-```
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
-VITE_CLERK_PUBLISHABLE_KEY=
-```
+---
+
+🎉 **Just Launched My Latest Project!** 🎉
+
+I'm excited to introduce **Hired**, a modern **Job Portal Website** built using **React**, **Supabase**, **Clerk**, and **Shadcn UI**.  
+This project is designed to connect job seekers with employers through a simple and powerful platform. 🚀
+
+---
+
+## 🔑 Key Features
+
+- 🔒 **Authentication:** Secure login/signup with Clerk.
+- 🗂️ **Job Management:** Post, view, search, and filter job listings.
+- 📄 **Application Tracking:** Apply for jobs and manage applications easily.
+- 📱 **Responsive UI:** Looks beautiful across all devices using Shadcn UI.
+- 🔥 **Supabase Backend:** Real-time data handling with Supabase.
+- 🎨 **Modern Design:** Clean and intuitive layout powered by Shadcn UI.
+
+---
+
+## 💻 Technologies Used
+
+- **Frontend:** React + Vite
+- **UI Library:** Shadcn UI
+- **Backend-as-a-Service:** Supabase
+- **Authentication:** Clerk
+- **Styling:** Tailwind CSS (inside Shadcn)
+
+---
+
+## 🚀 Live Demo
+
+👉 [View Hired Live](https://hired-iota.vercel.app/)
+
+---
+
+## 💖 Like my work ?
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️.
