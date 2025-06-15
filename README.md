@@ -41,7 +41,7 @@ This project is designed to connect job seekers with employers through a simple 
 
 ## 🚀 Live Demo
 
-👉 [View Hired Live](https://hired-iota.vercel.app/)
+👉 [View Hired Live](https://hirrd-blond.vercel.app)
 
 ---
 
