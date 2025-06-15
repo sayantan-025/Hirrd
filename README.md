@@ -21,8 +21,10 @@ This project is designed to connect job seekers with employers through a simple 
 - 🔒 **Authentication:** Secure login/signup with Clerk.
 - 🗂️ **Job Management:** Post, view, search, and filter job listings.
 - 📄 **Application Tracking:** Apply for jobs and manage applications easily.
+- ♻️ **Reusable Components:** Modular architecture for efficient, maintainable code.
 - 📱 **Responsive UI:** Looks beautiful across all devices using Shadcn UI.
 - 🔥 **Supabase Backend:** Real-time data handling with Supabase.
+- 🎯 **Error Monitoring:** Integrated with Sentry for real-time issue tracking and performance insights.
 - 🎨 **Modern Design:** Clean and intuitive layout powered by Shadcn UI.
 
 ---
